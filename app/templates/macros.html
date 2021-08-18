@@ -3,15 +3,15 @@
     <img src={{business.image}} class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">{{business.name}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{business.type}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted" style="text-transform: capitalize;">{{business.type}}</h6>
         <p class="card-text">{{business.description}}</p>
-        <a href="#" class="btn btn-primary">Mas información</a>
+        <a href="{{ url_for('business_information', category=business.type, id=business._id)}}" class="btn btn-danger">Mas información</a>
     </div>
 </div>
 {% endmacro %}
 
 {% macro render_categories(category)%}
-<a type="button" class="btn btn-outline-danger category" href="{{ url_for('business', category=category.name)}}" >
+<a type="button" class="btn btn-outline-danger category" href="{{ url_for('business_category', category=category.name)}}" >
     <img src={{category.image}} class="category__image" alt="...">
     <p class="category__text">{{category.name}}</p>
 </a>

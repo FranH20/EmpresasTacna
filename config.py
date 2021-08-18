@@ -1,1 +1,0 @@
-DATABASE_CONNECTION = "mongodb+srv://fran:fran123456@cluster0.t29p4.mongodb.net/empresas?retryWrites=true&w=majority"
