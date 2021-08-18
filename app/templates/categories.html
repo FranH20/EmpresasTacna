@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macros %}
+{% block title %}
+    {{ super() }}
+    Categorias
+{% endblock %}
+{% block content %}
+    {% for category in categories %}
+        {{ macros.render_categories(category) }}
+    {% endfor %}
+{% endblock %}

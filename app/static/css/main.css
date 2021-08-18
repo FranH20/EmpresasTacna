@@ -1,0 +1,21 @@
+.category{
+    text-decoration: none;
+    min-width: 16rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.category__image{
+    width: 5rem;
+}
+.category__text{
+    font-size: 1.8rem;
+    padding-top: 1.5rem;
+    text-transform: capitalize;
+}
+.category:hover{
+    cursor: pointer;
+}

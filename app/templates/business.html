@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macros %}
+{% block title %}
+    {{ super() }}
+    Empresas
+{% endblock %}
+{% block content %}
+    {% for business in enterprises %}
+        {{ macros.render_business(business)}}
+    {% endfor %}
+{% endblock %}
