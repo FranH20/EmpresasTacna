@@ -5,7 +5,9 @@
     Empresas
 {% endblock %}
 {% block content %}
-    {% for business in enterprises %}
-        {{ macros.render_business(business)}}
-    {% endfor %}
+    <div class="container pt-4 d-flex flex-row justify-content-around flex-wrap">
+        {% for business in enterprises %}
+            {{ macros.render_business(business)}}
+        {% endfor %}
+    </div>
 {% endblock %}

@@ -21,7 +21,8 @@ def index():
 
 def item_information(category, id):
     business_information = mongo.db.empresas.find_one({"_id": bson.ObjectId(oid=str(id))})
-    return render_template('item.html', business_information=business_information)
+    print(business_information)
+    return render_template('item.html', b_info=business_information)
 
 def item_business(category):
     business_category = mongo.db.empresas.find({"type": category})

@@ -5,7 +5,9 @@
     Categorias
 {% endblock %}
 {% block content %}
-    {% for category in categories %}
-        {{ macros.render_categories(category) }}
-    {% endfor %}
+    <div class="container pt-4 d-flex flex-row justify-content-around flex-wrap">
+        {% for category in categories %}
+            {{ macros.render_categories(category) }}
+        {% endfor %}
+    </div>
 {% endblock %}
